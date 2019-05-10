@@ -7,6 +7,6 @@
     "inquirer": "^6.3.1"
   },
   "bin": {
-    "vueCode": "./index.js"
+    "bs-vue-code-generate": "./index.js"
   }
 }
