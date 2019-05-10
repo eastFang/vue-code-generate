@@ -1,5 +1,5 @@
 {
-  "name": "@bs/vue-code-generate",
+  "name": "vue-code-generate",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,6 +7,6 @@
     "inquirer": "^6.3.1"
   },
   "bin": {
-    "bs-vue-code-generate": "./index.js"
+    "vue-code-generate": "./index.js"
   }
 }
