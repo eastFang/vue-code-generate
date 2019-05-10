@@ -32,6 +32,6 @@ inquirer
     }
   ])
   .then(({ filePathName, prefixCompOrg, compType }) => {
-    const absolutePathName = filePathName.startsWith('/') ? filePathName : path.resolve(__dirname, filePathName)
+    const absolutePathName = filePathName.startsWith('/') ? filePathName : process.cwd() + filePathName
     fs.writeFileSync(absolutePathName, templateStrMap[compType](prefixCompOrg))
   })
