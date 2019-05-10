@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs')
+const path = require('path')
 const inquirer = require('inquirer')
 const { prefixCompOrgEnum, compTypesEnum } = require('./utils')
 const templateStrMap = require('./templates/export')
@@ -31,5 +32,6 @@ inquirer
     }
   ])
   .then(({ filePathName, prefixCompOrg, compType }) => {
-    fs.writeFileSync(filePathName, templateStrMap[compType](prefixCompOrg))
+    const absolutePathName = filePathName.startsWith('/') ? filePathName : path.resolve(__dirname, filePathName)
+    fs.writeFileSync(absolutePathName, templateStrMap[compType](prefixCompOrg))
   })
