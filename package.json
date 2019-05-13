@@ -13,6 +13,6 @@
     "code-template"
   ],
   "bin": {
-    "vue-code-generate": "./index.js"
+    "vue-code-generate": "./lib/index.js"
   }
 }
