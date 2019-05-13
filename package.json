@@ -6,6 +6,12 @@
   "dependencies": {
     "inquirer": "^6.3.1"
   },
+  "keywords": [
+    "vue",
+    "element-ui",
+    "工具",
+    "code-template"
+  ],
   "bin": {
     "vue-code-generate": "./index.js"
   }
