@@ -1,7 +1,6 @@
-const dialogTemplateStr = require('./dialog')
-const tableTemplateStr = require('./table')
-
 module.exports = {
-  dialog: dialogTemplateStr,
-  table: tableTemplateStr
+  dialog: require('./dialog'),
+  table: require('./table'),
+  form: require('./form'),
+  tabs: require('./tabs')
 }

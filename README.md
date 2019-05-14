@@ -16,3 +16,5 @@
 - compTypes
   - dialog
   - table
+  - form
+  - tabs
