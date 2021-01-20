@@ -1,0 +1,19 @@
+{
+  "name": "@bs-east/vue-code-generate",
+  "version": "0.0.8",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "inquirer": "^6.3.1"
+  },
+  "keywords": [
+    "vue",
+    "element-ui",
+    "工具",
+    "code-template"
+  ],
+  "bin": {
+    "vue-code-generate": "./lib/index.js"
+  }
+}
